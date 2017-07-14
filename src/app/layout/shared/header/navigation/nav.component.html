@@ -1,0 +1,41 @@
+<nav class="__nav-menu">
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">{{ 'Header.HomeLink' | translate }}<span class="sr-only">{{ 'Header.SRCurrent' | translate }}</span></a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Header.TestLink' | translate }}<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['testing/compute']">{{ 'Header.ComputeLink' | translate }}<span class="sr-only">{{ 'Header.SRCurrent' | translate }}</span></a></li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['testing/history']">{{ 'Header.HistoryLink' | translate }}<span class="sr-only">{{ 'Header.SRCurrent' | translate }}</span></a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="{{ 'Header.Search' | translate }}">
+      </div>
+      <button type="submit" class="btn btn-default">{{ 'Header.SubmitBtn' | translate }}</button>
+    </form>
+    <div class="navbar-right" style="margin-right:0px;">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Header.Sel_lang' | translate }} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a (click)="changeLanguage('dt')">{{ 'Header.Languages.DT' | translate }}</a></li>
+            <li><a (click)="changeLanguage('en')">{{ 'Header.Languages.EN' | translate }}</a></li>
+            <li><a (click)="changeLanguage('es')">{{ 'Header.Languages.ES' | translate }}</a></li>
+            <li><a (click)="changeLanguage('fr')">{{ 'Header.Languages.FR' | translate }}</a></li>
+            <li><a (click)="changeLanguage('it')">{{ 'Header.Languages.IT' | translate }}</a></li>
+            <li><a (click)="changeLanguage('ja')">{{ 'Header.Languages.JA' | translate }}</a></li>
+            <li><a (click)="changeLanguage('ko')">{{ 'Header.Languages.KO' | translate }}</a></li>
+            <li><a (click)="changeLanguage('pt')">{{ 'Header.Languages.PT' | translate }}</a></li>
+            <li><a (click)="changeLanguage('ru')">{{ 'Header.Languages.RU' | translate }}</a></li>
+            <li><a (click)="changeLanguage('zht')">{{ 'Header.Languages.ZHT' | translate }}</a></li>
+            <li><a (click)="changeLanguage('zhs')">{{ 'Header.Languages.ZHS' | translate }}</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a style="margin-left:10px;" type="button" class="btn btn-default navbar-btn">{{ 'Header.LoginBtn' | translate }}</a>
+    </div>
+  </div>
+</nav>

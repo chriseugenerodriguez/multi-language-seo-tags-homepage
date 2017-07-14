@@ -1,0 +1,58 @@
+{
+	"ROUTES":{
+		"testing": "テスト",
+		"compute": "計算する",
+		"history": "歴史"
+	},
+
+	"Header": {
+
+		"HomeLink": "ホーム",
+		"TestLink": "テスト",
+		"ComputeLink": "計算する",
+		"HistoryLink": "歴史",
+
+		"Search": "サーチ",
+
+		"SRCurrent":"現在",
+		"SRToggle-Nav":"ナビゲーションを切り替える",
+
+		"Sel_lang": "言語を選択",
+		"Languages":{
+			"DT":"Duetsch",
+			"EN":"English",
+			"ES":"Español",
+			"FR":"Français",
+			"IT":"Italiano",
+			"JA":"日本語",
+			"KO":"한국어",
+			"PT":"Português",
+			"RU":"Pусский",
+			"ZHS":"简体中文",   
+			"ZHT":"繁體中文"
+		},
+
+		"SubmitBtn":"提出する",
+		"LoginBtn":"ログイン"
+
+	},
+	"Footer": {
+	},	
+
+	"Body": {
+
+		"Home":{
+			"Jumbotron": {
+				"Title": "これはヘッダーの例です",
+				"Description1": "この例は、デフォルトの、静的な、そして固定されたトップナビゲーションバーがどのように機能するかを説明する簡単な練習です。 応答性の高いCSSとHTMLが含まれているため、ビューポートとデバイスにも適応します。",
+				"Description2": "静的および固定のトップナビゲーションバーの違いを確認するには、スクロールしてください。",
+				"Btn":"ナビゲーションバーの表示 »"
+			}	
+		},
+
+		"404":{
+		
+		}
+	}
+
+  }

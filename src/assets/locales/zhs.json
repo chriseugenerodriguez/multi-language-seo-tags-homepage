@@ -1,0 +1,58 @@
+{
+	"ROUTES":{
+		"testing": "测试",
+		"compute": "计算",
+		"history": "历史"
+	},
+
+	"Header": {
+
+		"HomeLink": "家",
+		"TestLink": "测试",
+		"ComputeLink": "计算",
+		"HistoryLink": "历史",
+
+		"Search": "搜索",
+
+		"SRCurrent":"当前",
+		"SRToggle-Nav":"切换导航",
+
+		"Sel_lang": "选择语言",
+		"Languages":{
+			"DT":"Duetsch",
+			"EN":"English",
+			"ES":"Español",
+			"FR":"Français",
+			"IT":"Italiano",
+			"JA":"日本語",
+			"KO":"한국어",
+			"PT":"Português",
+			"RU":"Pусский",
+			"ZHS":"简体中文",   
+			"ZHT":"繁體中文"
+		},
+
+		"SubmitBtn":"提交",
+		"LoginBtn":"登录"
+
+	},
+	"Footer": {
+	},	
+
+	"Body": {
+
+		"Home":{
+			"Jumbotron": {
+				"Title": "这是一个示例头",
+				"Description1": "这个例子是一个快速的练习来说明默认，静态和固定到顶部导航栏的工作原理。 它包括响应式CSS和HTML，因此它也适应您的视口和设备。",
+				"Description2": "要查看静态和固定顶级导航栏之间的区别，只需滚动即可。",
+				"Btn":"查看导航栏文档 »"
+			}	
+		},
+
+		"404":{
+		
+		}
+	}
+
+  }

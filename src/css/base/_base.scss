@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+body {
+  background: $body-bg;
+  color: $gray-dark;
+  font: normal 125% / 1.4 $font-size-base;
+}
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+* {
+  @include box-sizing(border-box);
+
+  &::before,
+  &::after {
+    @include box-sizing(border-box);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: $screen-sm;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: $screen-md;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: $screen-lg;
+  }
+}
+
+
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:active {
+    color: $link-color;
+  }
+}

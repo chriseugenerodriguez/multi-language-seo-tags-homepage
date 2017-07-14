@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+// BEM - Block Element Modifier
+// This is how our code is structured. Please follow this layout and format.
+//
+// .steps {
+//	    &__item {		
+//		    &--first {}
+//		    &--last {}
+//		    &--active {}
+//		    &--done {}
+//	    }
+//	    &__link {}
+// }

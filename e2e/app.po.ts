@@ -1,11 +1,15 @@
-import { browser, by, element } from 'protractor';
+import { browser, element, by } from 'protractor';
 
-export class DPage {
+export class HomePage {
   navigateTo() {
     return browser.get('/');
   }
 
+  getParagraphTitle() {
+    return element(by.css('phx-app h1')).getText();
+  }
+
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('phx-app p')).getText();
   }
 }

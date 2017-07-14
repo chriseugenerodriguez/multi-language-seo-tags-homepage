@@ -1,10 +1,23 @@
 import { Component } from '@angular/core';
+import { environment } from '../environments/environment';
+
+// TRANSLATE
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'phx-app',
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app';
+
+   constructor(translate: TranslateService) {
+    
+    translate.addLangs(['dt', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'pt', 'ru', 'zhs', 'zht'])
+    translate.setDefaultLang('en');
+
+    const lang: string = translate.getBrowserLang();
+
+    translate.use(lang.match(/dt,en,es,fr,it,ja,ko,pt,ru,zhs,zht/) ? lang : 'en' )
+
+  }
 }

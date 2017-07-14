@@ -1,0 +1,36 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200/", //your application running with ng serve
+            "trace": true,
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "webRoot": "${workspaceRoot}/src/app",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
+                "webpack:///./src/*": "${workspaceRoot}/src/*"
+            },
+            "runtimeArgs": [
+                "--disable-session-crashed-bubble"
+            ]
+        },
+        {
+        "name": "Attach Chrome",
+        "type": "chrome",
+        "request": "attach",
+        "url": "http://localhost:4200",
+        "port": 9222,
+        "webRoot": "${workspaceRoot}/src/app",
+        "sourceMaps": true,
+        "sourceMapPathOverrides": {
+            "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
+            "webpack:///./src/*": "${workspaceRoot}/src/*"
+        }
+        }
+    ]
+}
