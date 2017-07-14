@@ -17,7 +17,6 @@ export class AppComponent {
 
     const lang: string = translate.getBrowserLang();
 
-    translate.use(lang.match(/dt,en,es,fr,it,ja,ko,pt,ru,zhs,zht/) ? lang : 'en' )
-
+    translate.use(lang && lang.match(/dt,en,es,fr,it,ja,ko,pt,ru,zhs,zht/) ? lang : 'en' )
   }
 }

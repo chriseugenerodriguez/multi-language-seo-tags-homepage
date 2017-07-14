@@ -12,8 +12,8 @@ import {TranslateService} from '@ngx-translate/core';
 export class NavComponent {
 
   constructor(private translate: TranslateService) {}
-  
-  changeLanguage(lang){
+
+  changeLanguage(lang) {
     this.translate.use(lang);
   }
 }
