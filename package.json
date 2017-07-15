@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "sass-lint": "sass-lint -c sass-lint.yml -v -q",
-    "ts-lint": "ng lint --type-check --force",
+    "ts-lint": "ng lint --type-check",
     "lint": "npm run sass-lint && npm run ts-lint",
     "prebuild": "ng build --prod --no-sourcemap && ngc && webpack",
     "build": "node dist/server.js",
