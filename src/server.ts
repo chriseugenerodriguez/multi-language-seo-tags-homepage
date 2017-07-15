@@ -16,7 +16,13 @@ const app = express();
 let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
 app.engine('html', (_, options, callback) => {
-  const opts = { document: template, url: options.req.url };
+  const opts = {
+    document: template,
+    url: options.req.url,
+    extraProviders: [
+      { provide: 'request', useFactory: () => options.req }
+    ]
+  };
 
   renderModuleFactory(AppServerModuleNgFactory, opts)
     .then(html => callback(null, html));
